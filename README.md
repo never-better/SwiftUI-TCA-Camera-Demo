@@ -1,5 +1,5 @@
 # SwiftUI-TCA-Camera-Demo
-SwiftUI Camera App Using Composable Architecture, AVFoundation (SwiftUI와 Swift-Composable-Architecture, AVFoundation을 사용한 카메라 데모 앱 입니다.)
+SwiftUI Camera App Using TCA(Composable Architecture), AVFoundation (SwiftUI와 Swift-Composable-Architecture, AVFoundation을 사용한 카메라 데모 앱 입니다.)
 
 <br/>
 <div align = 'center'>
