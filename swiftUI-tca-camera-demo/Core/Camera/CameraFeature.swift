@@ -18,7 +18,11 @@ struct CameraFeature: ReducerProtocol {
         var disableDismissAnimation: Bool = true
         
         var isFlipped: Bool = false
-        var flipDegree: Double = 0.0
+        var flipDegree: Double = 0.0 {
+            didSet(oldValue) {
+                print(oldValue)
+            }
+        }
         var flipImage: Image?
     }
     

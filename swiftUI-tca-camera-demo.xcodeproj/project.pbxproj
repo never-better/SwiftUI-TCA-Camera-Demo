@@ -54,6 +54,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1430E4102A66B789007475D6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1430E4122A66B7A0007475D6 /* Content */,
+				1430E4112A66B78E007475D6 /* Camera */,
+				146121D22A6506D2005D5828 /* CameraResult */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1430E4112A66B78E007475D6 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				14B097372A64FA2C000A4441 /* CameraView.swift */,
+				14B097352A64F92F000A4441 /* CameraFeature.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		1430E4122A66B7A0007475D6 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				14B097232A64F7E7000A4441 /* ContentView.swift */,
+				14B097332A64F8A2000A4441 /* ContentFeature.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		146121D22A6506D2005D5828 /* CameraResult */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,10 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				14B097212A64F7E7000A4441 /* swiftUI_tca_camera_demoApp.swift */,
-				14B097232A64F7E7000A4441 /* ContentView.swift */,
-				14B097332A64F8A2000A4441 /* ContentFeature.swift */,
+				1430E4102A66B789007475D6 /* Core */,
 				14B097322A64F82C000A4441 /* Camera */,
-				146121D22A6506D2005D5828 /* CameraResult */,
 				146121DB2A653C73005D5828 /* Extension */,
 				14B097252A64F7E8000A4441 /* Assets.xcassets */,
 				14B097272A64F7E8000A4441 /* Preview Content */,
@@ -114,8 +140,6 @@
 		14B097322A64F82C000A4441 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				14B097372A64FA2C000A4441 /* CameraView.swift */,
-				14B097352A64F92F000A4441 /* CameraFeature.swift */,
 				146121CF2A65067F005D5828 /* Camera.swift */,
 				14F292652A661E1C009604B7 /* CameraService.swift */,
 				146121D72A651838005D5828 /* CameraSetting.swift */,

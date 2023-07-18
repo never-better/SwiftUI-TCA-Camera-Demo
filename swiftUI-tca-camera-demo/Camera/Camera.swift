@@ -406,14 +406,15 @@ extension Camera: AVCaptureVideoDataOutputSampleBufferDelegate {
         }
         
         
-        if dropFrame < 3 {
+        if dropFrame < CameraSetting.dropFrame {
             dropFrame += 1
         } else  {
-            if dropFrame == 3 {
+            addToPreviewStream?(CIImage(cvPixelBuffer: pixelBuffer))
+            
+            if dropFrame == CameraSetting.dropFrame {
                 completeSwitchDevice?.resume(returning: Void())
                 dropFrame += 1
             }
-            addToPreviewStream?(CIImage(cvPixelBuffer: pixelBuffer))
         }
         
     }
